@@ -1,6 +1,6 @@
 const uri = {
     // server: 'https://clippyasst.onrender.com/',
-    server: 'http://localhost:3000/',
+    server: 'https://inveback.onrender.com/',
     github: 'aremumahmud',
     instagram: 'Devsdytok',
     twitter: 'Devsdytok',
