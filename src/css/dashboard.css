@@ -1,0 +1,261 @@
+@import url("https://fonts.cdnfonts.com/css/sanomat-sans-trial");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sanomat Sans Trial", sans-serif !important;
+}
+
+.nav_section {
+    position: fixed;
+    /* border: 1px solid; */
+    height: 100%;
+    overflow: auto;
+    transition: width 2s;
+}
+
+.other_section {
+    /* border: 1px solid; */
+    transition: width 2s;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+.section_wrap {
+    padding: 3%;
+}
+
+.navigation .nav_head {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .nav_menu {
+    padding: 6%;
+}
+
+.navigation .nav_menu ul li {
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* .navigation .nav_menu ul li:hover {
+    background-color: #00000080;
+    padding: .9rem;
+    border-radius: 10px;
+} */
+
+.navigation .user {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 75px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  */
+}
+
+.round_me {
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.685);
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.notify {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.685);
+}
+
+.user .user_info p {
+    font-size: 0.8rem;
+}
+
+.user .user_info p:last-child {
+    opacity: 0.9;
+}
+
+.investment_cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.section_wrap .section_head {
+    font-size: 1.5rem;
+}
+
+.recent_transactions {
+    margin-top: 5rem;
+}
+
+.recent_transactions .title {
+    font-size: 1.5rem;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+.info_wrap {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.transaction .status {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.685);
+}
+
+.transaction .what {
+    font-size: 0.6rem;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    background-color: #fff;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+
+.transaction_info .title {
+    font-size: 1.2rem;
+}
+
+.transaction_info .sub {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.transaction_amount p {
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    color: green;
+}
+
+.currency_select {
+    padding: 3%;
+    padding-top: 0;
+}
+
+.currency_select select {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.investment_plans {
+    padding: 3%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.investment_form form .subsection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.inv_title {
+    font-size: 1.5rem;
+}
+
+.investment_form form input,
+select,
+button {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: .6rem;
+}
+
+.admin_card {
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #151515b0;
+    color: #fff;
+}
+
+.gridme {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flexit {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.flexit input {
+    width: 70%;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.flexit button {
+    width: 30%;
+}
+
+.title_ {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
