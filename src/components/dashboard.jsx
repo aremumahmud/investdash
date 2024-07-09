@@ -81,7 +81,7 @@ function Dashboard (){
   }, [])
     return (
         <>
-        {!errorModal && (
+        {errorModal && (
         <Modal
           setErrorModal={setErrorModal}
      
