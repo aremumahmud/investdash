@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react"
 import Currency from "./currency"
 import Make_payment from "../libs/make_payment"
+import { FaBars } from "react-icons/fa6"
 
-function Payment({currency , setCurrency}){
+function Payment({currency , setCurrency, setnav}){
 
     let form = useRef()
     let [isDisables , disable] = useState(false)
@@ -46,7 +47,7 @@ useEffect(()=>{
     return (
         <div className="payments section">
 <div className="section_wrap">
-        <div className="section_head">Investment Plan Form</div>
+        <div className="section_head"> <FaBars onClick={()=>setnav(d=>!d)} className="hamb" />  Investment Plan Form</div>
       </div>
       <Currency setCurrency={setCurrency}  />
   <div className="section_wrap investment_form">

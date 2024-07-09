@@ -8,7 +8,7 @@ import { ReactNotifications } from 'react-notifications-component'
 import './css/notification_theme.css' 
 import Login from "./components/login/login";
 
-
+import './css/resp.css'
 import { Store } from 'react-notifications-component';
 import Admin from "./components/admin";
 

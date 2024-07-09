@@ -24,6 +24,8 @@ function Dashboard (){
     let [modalText, setModaltext] = useState("");
     let [link, setLink] = useState("/");
     let [linktext, setLinktext] = useState("");
+
+    let [nav  , setnav] = useState(true)
    
   useEffect(() => {
     if (!auth.user) {
@@ -61,9 +63,25 @@ function Dashboard (){
   
   }, [auth]);
 
+
+  useEffect(()=>{
+    if(window.innerWidth <= 768){
+      setnav(false)
+     }
+
+   let ev= window.addEventListener('resize', (e)=>{
+     let width =  e.target.innerWidth
+     if(width <= 768){
+      setnav(false)
+     }
+    })
+
+   
+    return window.removeEventListener('resize', ev)
+  }, [])
     return (
         <>
-        {errorModal && (
+        {!errorModal && (
         <Modal
           setErrorModal={setErrorModal}
      
@@ -81,20 +99,20 @@ function Dashboard (){
         />
       )}
          <div className="dashboard">
-            <div className="nav_section" style={{width:navWidth}}>
-               <Navigation page={page} setPage={setPage} />
+            <div className="nav_section" style={{width:navWidth , display:nav?'block':'none'}}>
+               <Navigation show={nav} closenav={()=>setnav(!nav)} page={page} setPage={setPage} />
             </div>
             <div className="other_section" style={{marginLeft: navWidth}}>
               {
-                page === 'overview' && <Section />
+                page === 'overview' && <Section setnav={setnav} />
               }
               {
-                page === 'plans' && <Plans setPage={setPage} currency={currency} setCurrency={setCurrency} />
+                page === 'plans' && <Plans setnav={setnav}  setPage={setPage} currency={currency} setCurrency={setCurrency} />
               } {
-                page === 'transactions' && <TransactionRecord />
+                page === 'transactions' && <TransactionRecord  setnav={setnav}  />
               }
               {
-                page === 'payment' && <Payment currency={currency} setCurrency={setCurrency} />
+                page === 'payment' && <Payment  setnav={setnav}  currency={currency} setCurrency={setCurrency} />
               }
             </div>
         </div>

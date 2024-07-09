@@ -93,7 +93,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.685);
@@ -101,6 +101,10 @@
 
 .user .user_info p {
     font-size: 0.8rem;
+}
+
+.hamb {
+    display: none;
 }
 
 .user .user_info p:last-child {

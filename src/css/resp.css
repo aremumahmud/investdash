@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        width: 50%;
+    }
+    .nav_section {
+        z-index: 999;
+        display: none;
+    }
+    .other_section {
+        margin-left: 0 !important;
+    }
+    .investment_cards {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .investment_cards .flip-card {
+        width: 100%;
+    }
+    .me {
+        display: flex !important;
+    }
+    .section_head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem !important;
+        padding-top: 1rem;
+    }
+    .hamb {
+        display: block;
+    }
+    .investment_plans {
+        grid-template-columns: 1fr;
+    }
+    .inv_wrap {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+}
