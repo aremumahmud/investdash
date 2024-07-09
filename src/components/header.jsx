@@ -1,4 +1,5 @@
 import logo from '../images/Daniel_Gallego__1_-removebg-preview.png'
+import GoogleTranslate from './tans'
 
 function Header(){
     return (
@@ -11,9 +12,7 @@ function Header(){
            <img style={{
             width:"8%"
            }} src={logo} alt="" />
-            <div style={{
-                border: '1px solid black'
-            }} id="google_translate_element"></div>
+           <GoogleTranslate />
         </div>
     )
 }

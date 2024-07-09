@@ -1,6 +1,7 @@
 import { FaBarsProgress, FaBell, FaGlobe, FaMoneyBill, FaPerson, FaX } from 'react-icons/fa6'
 import { useAuth } from '../hooks/AuthProvider';
 import logo from '../images/Daniel_Gallego__1_-removebg-preview.png'
+import GoogleTranslate from './tans';
 
 function Navigation ({page , setPage, closenav}){
 
@@ -28,7 +29,7 @@ function Navigation ({page , setPage, closenav}){
         <li onClick={()=>wrapclose(()=>setPage('transactions'))} className={page === 'transactions' && 'active'}><FaMoneyBill />Transactions</li>
         <li onClick={()=>wrapclose(()=>setPage('plans'))} className={page === 'plans' && 'active'}><FaBarsProgress /> Plans</li>
         <li onClick={()=>wrapclose(()=>setPage('payment'))} className={page === 'payment' && 'active'}><FaPerson/> Payment </li>
-        <div id="google_translate_element"></div>
+        <GoogleTranslate />
     </ul>
 </div>
 
