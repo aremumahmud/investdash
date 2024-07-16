@@ -27,7 +27,7 @@ const AuthProvider = ({ children }) => {
         dispatchError('')
         dispatch("Login Successful")
         setLoad(false)
-        setTimeout(()=> window.open("/dashboard"), 2000)
+        setTimeout(()=> window.open("/dashboard", "_self"), 2000)
        
         return;
       }
