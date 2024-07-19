@@ -12,7 +12,7 @@ function Section({setnav}){
             <div className="section_wrap">
                  <div className="section_head">
                 <FaBars onClick={()=>setnav(d=>!d)} className="hamb" />    
-                Welcome Back, {auth.user?.username?.split('@')[0]}
+                Welcome Back<span data-no-translate>, {auth.user?.username?.split('@')[0]}</span>
             </div>
 
             <div className="investment_cards">

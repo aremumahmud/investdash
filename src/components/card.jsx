@@ -58,7 +58,7 @@ function Card({name , amount , currency , type,multi}){
               MDowMIXeN6gAAAAASUVORK5CYII="></image>
             </svg>
             <p className="number">{currency}{Number(amount)*(multi||5)}</p>
-            <p className="name">{name}</p>
+            <p className="name"  data-no-translate>{name}</p>
         </div>
         <div className="flip-card-back">
             <div className="strip"></div>

@@ -1,7 +1,7 @@
 function Home (){
     return (
         <div className="homepage">
-            hekllo gus
+            hello guys
         </div>
     )
 }

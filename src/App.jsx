@@ -11,6 +11,7 @@ import Login from "./components/login/login";
 import './css/resp.css'
 import { Store } from 'react-notifications-component';
 import Admin from "./components/admin";
+import TranslateDropdown from "./components/transdrop";
 
 
 const PrivateRoute = () => {
@@ -63,6 +64,7 @@ function App() {
 
   return (
     <>
+    {/* <TranslateDropdown /> */}
     <ReactNotifications />
     <Router>
     <AuthProvider>
