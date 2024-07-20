@@ -9,7 +9,7 @@ const location = "eastus";
 const translateText = async(text, targetLanguage, from = 'en') => {
 
     if (!text || !text.trim()) return
-    console.log(text, targetLanguage)
+        // console.log(text, targetLanguage)
     try {
         const response = await axios({
             baseURL: endpoint,
@@ -31,7 +31,7 @@ const translateText = async(text, targetLanguage, from = 'en') => {
         });
         return response.data[0].translations[0].text;
     } catch (error) {
-        console.error('Error translating text:', error);
+        // console.error('Error translating text:', error);
         return text;
     }
 };
